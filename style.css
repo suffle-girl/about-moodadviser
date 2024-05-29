@@ -1,0 +1,228 @@
+/* Používáme intuitivní výpočet rozměrů prvků. */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #A0AF84;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 3.5rem;
+  background-color: #A0AF84;
+  border-bottom: #4A6670 1px solid;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+  color: #4A6670;
+  width: 50%;
+}
+
+.menu--item {
+  text-decoration: none; 
+  color: #4A6670; 
+}
+
+.menu--item a {
+  color: #4A6670; 
+}
+
+.menu--item:visited {
+  color: #4A6670;
+}
+
+.menu--item:hover {
+  color: #668F80;
+}
+
+.logo {
+  text-align: center;
+  font-family: Meow Script;
+  font-size: 2.5rem;
+  color: #4A6670;
+}
+
+main {
+  background-color: #A0AF84;
+}
+
+.main-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto;
+  height: 50vh;
+  width: 100%;
+  background-color: #668F80;
+}
+
+.main-card--img {
+  max-width: 50vh;
+  width: 25%;
+}
+
+.main-card--text {
+  color: #C3B59F;
+}
+
+.main-card--title {
+  margin-top: 0;
+  color: #320C40;
+}
+
+.main-card--title__link,
+.main-card--title__link:visited {
+  color: #472836;
+  font-weight: bold;
+}
+
+.container__menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container__menu--aboutUs,
+.container__menu--aboutProject {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  width: 50%;
+  margin: 10px auto;
+  font-size: 40px;
+  text-decoration: none;
+  color: #320C40;
+}
+
+.container__menu--aboutUs:visited,
+.container__menu--aboutProject:visited {
+  color: #320C40;
+}
+
+.container__menu--aboutUs {
+  background-color: #668F80;
+}
+
+.footer {
+  display: flex;
+  justify-content: end;
+  color: #320C40;
+  font-style: italic;
+}
+
+/* About Us */
+
+.about-us {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto 0 auto;
+}
+
+.about-us--title {
+  width: 95%;
+  display: flex;
+  padding: 10px 10px 0;
+  text-align: right;
+  background-color: #668f80;
+}
+
+.about-us--title--name {
+  /* font-family: Meow Script; */
+  font-size: 2rem;
+  color: #320C40;
+}
+
+.about-us--title--name__sarka {
+  color: #4a6670;
+}
+
+.about-us--title--name__deni {
+  color: #c3b59f;
+}
+
+.about-us--title--img {
+  width: 25%;
+  object-fit: contain;
+}
+
+.about-us--title--text {
+  margin: 0px 4rem 0rem 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-us--title--sarka {
+  text-align: left;
+  background-color: #a0af84;
+  border-bottom: 100px solid #668f80;
+}
+
+.about-us--title--paragraph {
+  color: #320C40;
+}
+
+
+/* About Project */
+
+.AboutProject {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 70px;
+}
+
+.AboutProject__title {
+  max-width: 800px;
+}
+
+.about-project__container1,
+.about-project__container2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #668F80;
+}
+
+.about-project--name {
+  width: 100%;
+  text-align: start;
+  font-size: 4.5rem;
+  color: #320C40;
+  font-family: Meow Script;
+}
+
+.about__project--zarovkaImg,
+.about__project--noteImg {
+  width: 30%;
+}
+
+.about__project--title {
+  margin: 5px;
+  width: 50%;
+  height: 50%;
+  text-align: justify;
+  color: #472836;
+}
